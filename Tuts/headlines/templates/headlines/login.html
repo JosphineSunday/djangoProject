@@ -1,0 +1,212 @@
+{%load static%}
+<html>
+<head><title></title></head>
+	<style>
+		body{
+			background-color: rgb(219, 205, 205);
+		}
+		.mydiv{
+			background-color:#3b5598;
+			color:white;
+			font-size:40px;
+			padding:8px;
+			padding-left:250px;
+			font-weight:bold;
+			font-family:verdana;
+			height:60;
+			padding-top: 30px;
+			display: flex;
+		 
+			}
+		#get{
+/*			font-size:15px;
+			float:right;
+			color:white;
+			padding-left: 200px;*/
+			position:absolute;
+			font-size:20px;
+			left:52%;
+			top:6%;
+			font-family:verdana;
+			font-size:12px;
+			}
+		#get2{
+			position:absolute;
+			font-size:20px;
+			left:30%;
+			top:6%;
+			font-family:verdana;
+			font-size:12px;
+			}
+			label{
+				font-size:15px;
+			}
+		.pss{
+			padding-left:500px;
+			}
+		.emm{
+			/* padding-right:20px */
+			padding-left:20px;
+			}
+		.mydiv2{
+			position:absolute;
+			width:100%;
+			height:645px;
+			left:53%;
+			top:90px;
+			color:#000;
+			height:75px;
+			width:500px;
+			}
+			.mydiv3{
+			position:absolute;
+			width:100%;
+			height:645px;
+			left:53%;
+			top:120px;
+			color:#000;
+			height:75px;
+			width:500px;
+			}
+			#quick{
+			position:absolute;
+			width:100%;
+			height:645px;
+			left:0%;
+			top:100px;
+			color:#000;
+			height:75px;
+			width:500px;
+			}
+			h1{
+				font-size:50px;
+				font-style: Tahoma;
+			}
+
+		.submit1{
+
+			position:absolute;
+			font-size:15px;
+			left:82%;
+			background-color: #3b5598;
+			/*top:6%;*/
+			font-family:verdana;
+			font-size:12px;
+			margin-top: 17px;
+			color: white;
+			font-weight: bold;
+			}
+		#namebox{
+			width:200px;
+			height:40px;
+			border-radius:5px 5px 5px 5px;
+			background:white;
+			padding:10px;
+			font-size:18px;
+			margin-top:8px;
+			border-width: 1px;
+			border-style:solid;
+			border-color: grey;
+			margin-top: 100px;
+		}	
+		#emailbox{
+			width: 408px;
+			height: 40px;
+			background:white;
+			font-size: 18px;
+			margin-top: 8px;
+			border-style: solid;
+			border-color: grey;
+			border-radius:5px 5px 5px 5px;
+		
+		}
+		img{
+			position: absolute;
+			left: 10%;
+			top: 30%;
+
+		}
+		#passbox{
+			width: 408px;
+			height: 40px;
+			background:white;
+			font-size: 18px;
+			margin-top: 8px;
+			border-style: solid;
+			border-color: grey;
+			border-radius:5px 5px 5px 5px;
+		}
+		#bday{
+			width: 208px;
+			height: 40px;
+			background:white;
+			font-size: 18px;
+			margin-top: 8px;
+			border-style: solid;
+			border-color: grey;
+			border-radius:5px 5px 5px 5px;
+		}
+		#day{
+			font-size: 22px;
+			color:rgb(184, 171, 171);
+			font-weight: bold;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+		}
+		#gen{
+			font-size: 25px;
+			color:rgb(184, 171, 171);
+			font-weight: bold;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+		}
+		#female{
+			font-size: 25px;
+			font-weight: bold;
+		}
+		#male{
+			font-size: 25px;
+			font-weight: bold;
+		}
+		#custom{
+			font-size: 25px;
+			font-weight: bold;
+		}
+</style>
+<body padding-right:200px>
+ 
+	<div class = "mydiv">
+		facebook
+		<div><input type="submit" class="submit1" value="login" /></div>
+
+		<form id = "get" class = "emm">
+			<label name = "email">email or phone </label><br>
+			<input type="email" name="email" /><br>
+		</form>
+		<form id = "get2" class ="pss">
+			<label>password</label><br>
+			<input type="password" name="password" /><br>
+			<span style="color:grey" ><font font-size = "20px">Forgotten account?</font></span><br>
+		</form>	
+	</div>
+	<div class = "mydiv2">
+		<h1>Create an account</h1>
+		<span id = "quick">It's quick and easy.</span>
+	</div>
+	<div class="mydiv3">
+		<input placeholder="First Name" type="text" id="namebox" name="name1" />
+		<input placeholder="Last Name" type="text" id="namebox"  /> <br>
+		<input placeholder="Email" type="text" id="emailbox">
+		<input placeholder="New password" type="text" id = "passbox"><br>
+		<span id ="day">Birthday:</span><br>
+		<input type="date" id = "bday"><br>
+		<span id="gen">Gender:</span><br>
+		<input type="radio" id ="female" name="gen">	Female
+		<input type="radio" id ="male" name="gen">	Male
+		<input type="radio" id ="Custom" name="gen">Custom<br>
+		By clicking sign up, you agree to our Terms,data Policy and cookie policy.You may receive SMS notifications from us and can opt 
+		out at any time
+
+	</div>
+
+	<img src= "{%static 'Capture.PNG'%}">
+</body>
+</html>
